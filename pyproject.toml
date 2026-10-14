@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sgof-experiments"
+version = "0.2.0"
+readme = "README.md"
+description = "SGoF experimental design, modular reference implementation, and benchmark harness"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "opencv-python>=4.8,<5", "torch>=2.1,<3"]
+
+[project.scripts]
+sgof-experiments = "sgof.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["sgof*"]

@@ -1,0 +1,5 @@
+# Real LPIPS uses torchvision and pretrained weights; install in a clean environment.
+lpips>=0.1.4
+torchvision>=0.16
+# Plotting only; not needed for the default image contact sheets.
+matplotlib>=3.7
