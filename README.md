@@ -1,11 +1,15 @@
 # SGoF
-## [Paper] SGoF: Distilling Semantic-Geometric Occupancy Fields from Multimodal Scene Understanding for Large-Scale Gaussian Splatting
+## [Paper] SGoF: Distilling Semantic-Geometric Occupancy Fields from Scene Understanding for Large-Scale Gaussian Splatting
 These are the official code releases.
 - Graphical Abstract:
-<img src="" alt="Teaser Image">
+<img src="https://github.com/jubo-neu/SGoF/blob/main/teaser.png" alt="Teaser Image">
 
 
 ## Highlights
+- Fuses geometric and semantic cues for 3D Gaussian initialization
+- Applies slice-wise semantic modulation to 3D feature volumes
+- Distills occupancy and camera poses into a vision-only student
+- Converts predicted voxel fields into Gaussians via occupancy-guided sampling
 
 
 ## TODO
