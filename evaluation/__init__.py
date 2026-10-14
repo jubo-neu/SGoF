@@ -1,0 +1,1 @@
+"""SGoF evaluation components."""
