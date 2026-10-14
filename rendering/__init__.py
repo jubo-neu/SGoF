@@ -1,0 +1,1 @@
+"""SGoF rendering components."""
