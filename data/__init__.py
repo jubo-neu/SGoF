@@ -1,0 +1,1 @@
+"""SGoF data components."""
