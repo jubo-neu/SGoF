@@ -1,0 +1,11 @@
+{
+  "id":"native_3dgs_Building_0",
+  "method":"3dgs",
+  "protocol":"native",
+  "status":"planned",
+  "cwd":"/absolute/path/to/official/gaussian-splatting",
+  "output":"/absolute/path/to/run_records/native_3dgs_Building_0",
+  "argv":["/absolute/path/to/3dgs_env/bin/python","train.py","-s","/absolute/path/to/prepared/Building","-m","/absolute/path/to/model_output","--iterations","7000","--eval"],
+  "timeout_s":86400,
+  "hardware":{"gpu":"record exact GPU","gpu_count":1,"image_resolution":"record actual resolution","notes":"Official dataset split must be adapted explicitly; --eval defaults alone do not guarantee the shared split."}
+}

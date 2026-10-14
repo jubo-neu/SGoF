@@ -1,0 +1,12 @@
+{
+  "verified_on":"2026-10-14",
+  "methods":[
+    {"id":"3dgs","display":"3DGS","year":2023,"paper":"https://arxiv.org/abs/2308.04079","code":"https://github.com/graphdeco-inria/gaussian-splatting","camera_input":"COLMAP/known cameras","representation":"anisotropic 3D Gaussians","native_iterations":"record official selected budget; additionally test 7000 and 30000"},
+    {"id":"citygaussianv2","display":"CityGaussianV2","year":2025,"venue":"ICLR 2025","first_preprint_year":2024,"paper":"https://arxiv.org/abs/2411.00771","project":"https://dekuliutesla.github.io/CityGaussianV2/","code":"https://github.com/Linketic/CityGaussian","camera_input":"known cameras","representation":"2DGS-based city-scale method; native representation preserved"},
+    {"id":"anysplat","display":"AnySplat","year":2025,"paper":"https://arxiv.org/abs/2505.23716","project":"https://city-super.github.io/anysplat/","code":"https://github.com/OpenRobotLab/AnySplat","camera_input":"unposed RGB, predicted intrinsics and extrinsics"},
+    {"id":"hicogs","display":"HiCo-GS","year":2026,"venue":"ACM Multimedia 2026, as stated by official repository","paper":"https://arxiv.org/abs/2608.14136","code":"https://github.com/WZ-CS/HiCo-GS","camera_input":"known cameras; depth/geometry supervision","official_profile":"30000 iterations, 4 RTX4090; do not compare this hardware cost directly with single-A800 runs"},
+    {"id":"topogs","display":"TopoGS","year":2026,"paper":"https://arxiv.org/abs/2609.27868","code":"https://github.com/WZ-CS/TopoGS","camera_input":"known cameras; optional monocular depth priors","official_example":"100000 iterations, torchrun 4 processes; use matched hardware for any timing comparison"}
+  ],
+  "sgof":{"source":"user SGoF.pdf, 10 pages of a manuscript labeled 25 pages","official_repository":"https://github.com/jubo-neu/SGoF","observed_repository_files":["README.md"],"available_implementation":"independent reference in this project; not official weights or code"},
+  "selection_note":"User chose reproducible dataset-matched 2026 methods instead of the absolute newest sparse-view preprints. No claim of an exhaustive latest-method survey."
+}

@@ -1,0 +1,4 @@
+{
+  "model": {"image_size":224,"patch_size":16,"embed_dim":192,"transformer_layers":12,"attention_heads":3,"seed_channels":64,"decoder_channels":[32,16,8],"grid_size":32,"teacher_channels":256,"text_dim":512,"modulation_hidden":256,"pose_hidden":256,"pose_layers":2,"modulation":"zwise","residual":true,"batch_norm":true},
+  "train": {"steps":50000,"batch_size":8,"learning_rate":0.0001,"lambda_occ":1.0,"lambda_pose":0.1,"lambda_intrinsics":0.0,"lambda_ssim":0.2,"seed":0,"device":"cuda","checkpoint_every":1000}
+}
